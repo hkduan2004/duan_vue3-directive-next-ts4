@@ -2,13 +2,13 @@
  * @Author: duan
  * @Date: 2022-09-19 16:58:50
  * @LastEditors: duan
- * @LastEditTime: 2022-09-20 14:49:59
+ * @LastEditTime: 2022-09-20 18:27:26
  * @Description: file content
 -->
 # duan_vue3-directive-next-ts4
 
 关于duan_vue3-directive-next-ts4:
->一些常用的vue3自定义指令,目前只支持vue3,并没有向下兼容，毕竟vue3已经成为vue-cli的默认版本了，后续会考虑如何兼容uni-app下的不同平台（上班摸鱼的时候写写，嘿嘿嘿），若插件内部的指令有bug，也希望使用的开发者反馈给我，并提出您的宝贵意见，大家一起学习。
+>一些常用的vue3自定义指令,目前只支持vue3,并没有向下兼容，后续会考虑如何兼容uni-app下的不同平台（上班摸鱼的时候写写，嘿嘿嘿），若插件内部的指令有bug，也希望使用的开发者反馈给我，并提出您的宝贵意见，大家一起学习。
 
 ## 快速开始
 1.下载
