@@ -1,0 +1,84 @@
+:root {
+    --ydv-brand-color: #409eff;
+    --ydv-drak_color: #909399;
+    --ydv-gray-backcolor: #f2f2f2;
+}
+
+.ydv_screen {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+/** v-load相关样式 */
+.ydv_screen.ydv_screen-load {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background .5s;
+    color: var(--ydv-brand-color);
+}
+
+
+@keyframes loadanimation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.ydv_screen .ydv_screen_loadimg {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+    background-image: url('../assets/load.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation: loadanimation 1.3s ease-in-out infinite;
+}
+
+/** v-ellipsis相关样式 */
+.ydv_ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ydv_ellipsis.ydv_ellipsis_singal {
+    word-wrap: break-word;
+    /*强制换行*/
+    white-space: nowrap;
+    /*强制不换行*/
+}
+
+.ydv_ellipsis.ydv_ellipsis_double {
+    display: -webkit-box;
+    /* -webkit-line-clamp: 2;
+    line-clamp: 2; */
+    -webkit-box-orient: vertical;
+}
+
+
+/** v-empty相关样式 */
+.ydv_empty{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    background-color: var(--ydv-gray-backcolor);
+}
+.ydv_empty img{
+    width: 20%;
+    height: auto;
+}
+.ydv_empty .ydv_empty_text{
+    margin-top: 5px;
+    color: var(--ydv-drak_color);
+}
